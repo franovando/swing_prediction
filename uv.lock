@@ -487,6 +487,7 @@ dependencies = [
     { name = "pyprojroot" },
     { name = "scikit-learn" },
     { name = "seaborn" },
+    { name = "xgboost" },
 ]
 
 [package.metadata]
@@ -499,6 +500,7 @@ requires-dist = [
     { name = "pyprojroot", specifier = ">=0.3.0" },
     { name = "scikit-learn", specifier = ">=1.9.0" },
     { name = "seaborn", specifier = ">=0.13.2" },
+    { name = "xgboost", specifier = ">=3.3.0" },
 ]
 
 [[package]]
