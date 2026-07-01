@@ -1,7 +1,4 @@
 *.parquet
 .venv/
-data/
-models/
-outputs/
 __pycache__/
 .ipynb_checkpoints/
