@@ -34,17 +34,16 @@ Para ejecutar el proyecto es necesario contar con:
 ## 1. Clonar el repositorio
 
 ```bash
-git clone <URL_DEL_REPOSITORIO>
-cd <NOMBRE_DEL_REPOSITORIO>
+git clone https://github.com/franovando/swing_prediction.git
 ```
 
 ## 2. Instalar uv (si aún no se encuentra instalado)
 
-Consultar la documentación oficial de uv para la instalación correspondiente al sistema operativo.
+Consultar la [documentación oficial](https://docs.astral.sh/uv/getting-started/installation/) de `uv` para la instalación correspondiente al sistema operativo.
 
 ## 3. Crear el entorno e instalar las dependencias
 
-Desde la carpeta raíz del proyecto ejecutar:
+Desde la carpeta raíz del proyecto ejecutar en la terminal:
 
 ```bash
 uv sync
@@ -81,31 +80,33 @@ data/
 │   ├── raw/                # Datos originales
 │   └── processed/          # Datos procesados
 │
-├── notebooks/              # Análisis exploratorio y modelado
+├── notebooks/
+│   ├── 00_target_definition.ipynb 
+│   ├── 01_features.ipynb  
+│   ├── 02_eda.ipynb  
+│   ├── 03.1_regresion_logistica.ipynb  
+│   ├── 03.2_lgbm.ipynb  
+│   └── 03.3_xgboost.ipynb             
 │
-├── outputs/
-│
+├── outputs/ 
+│   ├── lightgbm_1/ 
+│   ├── lightgbm_2/ 
+│   ├── regresion_logistica/
+│   ├── xgboost_1/
+│   └── xgboost_1/
 ├── .gitignore
+├── .python-version
 ├── pyproject.toml
 ├── uv.lock
 └── README.md
 ```
 
-Las carpeta `data/` y `outputs/` se encuentran excluidas del control de versiones mediante `.gitignore`, ya que contienen archivos derivados o provistos externamente.
+Las carpeta `data/` y `outputs/` se encuentran vacías, ya que contienen archivos derivados o provistos externamente.
 
 ---
 
 # Ejecución del proyecto
 
-*Esta sección será completada una vez definido el pipeline principal.*
-
-El objetivo es que el proyecto pueda ejecutarse mediante un único comando, reproduciendo todo el flujo de procesamiento y entrenamiento.
+Una vez guardados los datos, las notebooks deben ejecutarse en el orden que están enumeradas.
 
 ---
-
-# Generación de `validacion.parquet`
-
-*Esta sección será completada una vez implementado el modelo final.*
-
-Aquí se documentará el procedimiento necesario para generar el archivo de predicciones a partir de `temporada2.parquet`.
-
