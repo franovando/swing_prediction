@@ -2,7 +2,7 @@
 
 ## Integrantes
 
-* Agustina Mackey
+* Agustina Mac kay
 * Francisco Ovando
 * Simón Gazze
 
